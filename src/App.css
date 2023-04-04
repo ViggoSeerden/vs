@@ -1,32 +1,111 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"),
+  url('./fonts/Roboto-Regular.ttf')
+}
+@font-face {
+  font-family: 'Roboto Thin';
+  src: local("Roboto Thin"),
+  url('./fonts/Roboto-Thin.ttf')
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Thin";
+  background-image: linear-gradient(#121b2d, #1e3157);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.App { 
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 360px;
+  width: 384px;
+  height: 384px;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navlink {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem; 
+  font-size: larger;
+}
+
+.navbar li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem; 
+  font-size: large;
+}
+
+.content {
+  color: white;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem 10px;
+  padding-top: 10px;  
+  border-bottom: 1px solid white;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li.active {
+  text-decoration: underline;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+}
+
+.sitetitle {
+  text-decoration: none;
+  font-size: xx-large;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hello {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-family: 'Roboto';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  font-size: 3rem;
+  font-family: 'Roboto';
+}
+
+p {
+  text-align: center;
 }

@@ -1,17 +1,24 @@
-import logo from './images/logo512noborder.png';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Site under construction. Thanks for visiting though :)
-        </p>
-        <p>-Viggo Seerden</p>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar></Navbar>
+        <Routes>
+          <Route exact path="/vs" element={<Home/>} />
+          <Route exact path="/vs/About" element={<About/>} />
+          <Route exact path="/vs/Skills" element={<Skills/>} />
+          <Route exact path="/vs/Contact" element={<Contact/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
