@@ -1,6 +1,6 @@
 import logo from '../images/logo512noborder.png';
 
-function Contact() {
+function Luuk() {
     return (
         <div className='content text-center'>
             hoi luuk <br/>
@@ -9,4 +9,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default Luuk;
