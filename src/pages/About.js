@@ -2,7 +2,7 @@ import logo from '../images/logo512noborder.png';
 
 function About() {
     return (
-        <div className='content'>
+        <div className='content about'>
             <label className='name'>About</label>
             <br/>
             <p>My name is Viggo Seerden. I am a Dutch 18-year old male software development student at Fontys University of Applied Sciences in Eindhoven. <br/> 

@@ -1,13 +1,13 @@
 import logo from '../images/logo512noborder.png';
 
-function Skills() {
+function Experience() {
     return (
         <div className='content'>
-            <label className='name'>Skills</label>
+            <label className='name'>Experience</label>
             <br/>
             <p>(WIP)</p>
         </div>
     )
 }
 
-export default Skills;
+export default Experience;

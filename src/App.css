@@ -21,18 +21,9 @@ body {
   background-attachment: fixed;
 }
 
-.App { 
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  border-radius: 360px;
-  width: 384px;
-  height: 384px;
-  object-fit: cover;
+.pic {
+  height: 700px;
+  width: 470px;
 }
 
 .navlink {
@@ -41,21 +32,27 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .25rem; 
   font-size: larger;
+}
+
+.navlink:hover {
+  text-decoration: underline;
+}
+
+.roboto {
+  font-family: "Roboto";
 }
 
 .navbar li {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .25rem; 
+  padding: .25rem;
   font-size: large;
 }
 
 .content {
   color: white;
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,9 +65,10 @@ body {
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 0 1rem 10px;
+  padding: 0 5rem 10px;
   padding-top: 10px;  
   border-bottom: 1px solid white;
+  background-color: #121b2d;
 }
 
 .navbar ul {
