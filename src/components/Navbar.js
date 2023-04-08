@@ -1,29 +1,22 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
-
-
 function Navbar() {
     return (
-        <nav className="navbar sticky top-0 grid-rows-1 grid-cols-3">
-            <div>
-                <button className="sitetitle" onClick={() => {window.location.href="/vs"; document.getElementById("top").scrollIntoView({ behavior: "smooth" })}}>Viggo Seerden</button>
+        <nav className="navbar sticky top-0 grid-rows-1 grid-cols-3 z-10">
+            <div className="grid-start-1 xs:col-span-1 2xs:col-span-full xs:text-center sm:text-left justify-center flex">
+                <button className="sitetitle sm:text-3xl xs:text-lg 2xs:text-md" onClick={() => {window.location.href="/vs"; document.getElementById("top").scrollIntoView({ behavior: "smooth" })}}>Viggo Seerden</button>
             </div>
-            <div>
+            <div className="col-span-1 2xs:hidden sm:block text-center">
                 <ul>
                     <button className="navlink py-3" onClick={() => { document.getElementById("about").scrollIntoView({ behavior: "smooth" }) }}>About</button>
                     <button className="navlink py-3" onClick={() => { document.getElementById("experience").scrollIntoView({ behavior: "smooth" })}}>Experience</button>
-                    <button className="navlink py-3" onClick={() => { document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}}>Contact</button>
                 </ul>
             </div>
-            <div>
+            <div className="col-span-1 grid-end-1 2xs:hidden xs:block">
                 <ul style={{ paddingTop: "5px" }}>
                     <li>
-                        <a className="navlink py-1" target="_blank" href="mailto:oggivseerden@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a className="navlink py-1" target="_blank" href="mailto:oggivseerden@gmail.com"><i className="fa-solid fa-envelope"></i></a>
                     </li>
                     <li>
-                        <a className="navlink py-1" target="_blank" href="https://github.com/ViggoSeerden"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a className="navlink py-1" target="_blank" href="https://www.linkedin.com/in/viggo-seerden/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a className="navlink py-1" target="_blank" href="https://www.linkedin.com/in/viggo-seerden/"><i className="fa-brands fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
@@ -32,16 +25,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-
-    return (
-        <li className={isActive ? "active" : ""}>
-            <Link to={to} {...props} style={{ color: "white", textDecoration: "none", paddingTop: "5px" }}>
-                {children}
-            </Link>
-        </li>
-    )
-}
