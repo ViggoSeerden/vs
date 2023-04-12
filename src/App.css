@@ -22,7 +22,7 @@
 
 body {
   font-family: "Roboto Thin";
-  background-image: linear-gradient(#000000, rgb(22, 22, 22), #0c0c0c, rgb(22, 22, 22));
+  background-image: radial-gradient(rgba(40, 40, 40), rgb(0, 0, 0));
 }
 
 .pic {
@@ -51,11 +51,12 @@ body {
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 
@@ -85,7 +86,8 @@ label {
 }
 
 .navlink:hover {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
 }
 
 .roboto {
@@ -128,12 +130,9 @@ label {
   gap: 1rem;
 }
 
-.navbar li.active {
+.active {
   text-decoration: underline;
-}
-
-.navbar li:hover {
-  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .sitetitle {

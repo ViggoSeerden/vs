@@ -4,10 +4,20 @@ import broadway from '../images/broadway.png';
 import tts from '../images/tartarussimlogo.png';
 import rockstars from '../images/rockstars.png';
 import shelves from '../images/shelves.png';
+import { useState } from 'react';
 
 function ProjectCarousel() {
 
+    var carouselNum = 1;
+
     function showSlide(index) {
+        if (index > 6) {
+            index = 1
+        }
+        else if (index < 1) {
+            index = 6
+        }
+
         if (!document.getElementById(1).className.includes("hidden")) {
             document.getElementById(1).className = document.getElementById(1).className + " hidden"
         };
@@ -27,10 +37,21 @@ function ProjectCarousel() {
             document.getElementById(6).className = document.getElementById(6).className + " hidden"
         };
 
+        document.getElementById("1btn").className = "navlink"
+        document.getElementById("2btn").className = "navlink"
+        document.getElementById("3btn").className = "navlink"
+        document.getElementById("4btn").className = "navlink"
+        document.getElementById("5btn").className = "navlink"
+        document.getElementById("6btn").className = "navlink"
+
+        document.getElementById(index + "btn").className = document.getElementById(index + "btn").className + " active"
+
         if (document.getElementById(index).className.includes("hidden")) {
             var newlist = document.getElementById(index).className.replace("hidden", "")
             document.getElementById(index).className = newlist;
         };
+
+        carouselNum = index;
     }
 
     return (
@@ -148,12 +169,14 @@ function ProjectCarousel() {
                 </div>
             </div>
             <div className="slidecontrols pt-3 my-3 border-t border-solid border-white">
-                <button className='navlink' onClick={() => showSlide(1)}>1</button>
-                <button className='navlink' onClick={() => showSlide(2)}>2</button>
-                <button className='navlink' onClick={() => showSlide(3)}>3</button>
-                <button className='navlink' onClick={() => showSlide(4)}>4</button>
-                <button className='navlink' onClick={() => showSlide(5)}>5</button>
-                <button className='navlink' onClick={() => showSlide(6)}>6</button>
+                <input type="button" className='navlink' onClick={() => showSlide(carouselNum - 1)} value="<" />
+                <button className='navlink active' id="1btn" onClick={() => showSlide(1)}>1</button>
+                <button className='navlink' id="2btn" onClick={() => showSlide(2)}>2</button>
+                <button className='navlink' id="3btn" onClick={() => showSlide(3)}>3</button>
+                <button className='navlink' id="4btn" onClick={() => showSlide(4)}>4</button>
+                <button className='navlink' id="5btn" onClick={() => showSlide(5)}>5</button>
+                <button className='navlink' id="6btn" onClick={() => showSlide(6)}>6</button>
+                <input type="button" className='navlink' onClick={() => showSlide(carouselNum + 1)} value=">" />
             </div>
         </div>
     )

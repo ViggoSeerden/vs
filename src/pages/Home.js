@@ -1,5 +1,5 @@
 import ProjectCarousel from '../components/Carousel';
-import logo from '../images/pic.png';
+import logo from '../images/pic.webp';
 
 function Home() {
 
@@ -35,11 +35,11 @@ function Home() {
                 </div>
                 <div className='border-t border-solid border-white'> </div>
                 <div className='content'>
-                    <label className='text-xl'>Thank you for visiting! While this site is fully responsive, for the best experience,
+                    <label className='text-xl text-center px-5'>Thank you for visiting! While this site is fully responsive, for the best experience,
                         I highly recommend you view this site on a computer!</label>
                     <br />
                     <br />
-                    <button className='text-white no-underline hover:underline'
+                    <button className='text-white no-underline hover:underline text-center 2xs:text-sm xs:text-md sm:text-lg'
                         onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })} >
                         ⇩ &nbsp; Scroll down to learn more about me &nbsp; ⇩
                     </button>
