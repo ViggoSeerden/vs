@@ -1,10 +1,9 @@
-import io from '../images/ioscold.png';
-import art from '../images/art.png';
+import io from '../images/io.png';
+import art from '../images/art.jpg';
 import broadway from '../images/broadway.png';
 import tts from '../images/tartarussimlogo.png';
 import rockstars from '../images/rockstars.png';
 import shelves from '../images/shelves.png';
-import { useState } from 'react';
 
 function ProjectCarousel() {
 
