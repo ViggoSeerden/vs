@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vs/static/css/main.861208ae.css",
-    "main.js": "/vs/static/js/main.c90c1ac3.js",
+    "main.css": "/vs/static/css/main.d74f7e62.css",
+    "main.js": "/vs/static/js/main.6e00566a.js",
     "static/js/787.5c70ddb9.chunk.js": "/vs/static/js/787.5c70ddb9.chunk.js",
     "static/media/tartarussimlogo.png": "/vs/static/media/tartarussimlogo.bcf30e0a67fe11a12b36.png",
     "static/media/pic.webp": "/vs/static/media/pic.a11d180ce950d9a61d8f.webp",
@@ -15,12 +15,12 @@
     "static/media/Roboto-Light.ttf": "/vs/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
     "static/media/broadway.png": "/vs/static/media/broadway.5eb6c1c546082bdc3dda.png",
     "index.html": "/vs/index.html",
-    "main.861208ae.css.map": "/vs/static/css/main.861208ae.css.map",
-    "main.c90c1ac3.js.map": "/vs/static/js/main.c90c1ac3.js.map",
+    "main.d74f7e62.css.map": "/vs/static/css/main.d74f7e62.css.map",
+    "main.6e00566a.js.map": "/vs/static/js/main.6e00566a.js.map",
     "787.5c70ddb9.chunk.js.map": "/vs/static/js/787.5c70ddb9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.861208ae.css",
-    "static/js/main.c90c1ac3.js"
+    "static/css/main.d74f7e62.css",
+    "static/js/main.6e00566a.js"
   ]
 }
