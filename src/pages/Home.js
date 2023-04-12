@@ -101,7 +101,7 @@ function Home() {
                         For a better overview of my experience and/or skills, please refer to my LinkedIn page.</p>
                 </div>
             </div>
-            <button onClick={topFunction} id="topbtn" title="Go to top">^</button>
+            <button onClick={topFunction} id="topbtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
             <br />
             <br />
             <br />
