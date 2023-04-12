@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/vs/static/css/main.d74f7e62.css",
-    "main.js": "/vs/static/js/main.6e00566a.js",
+    "main.js": "/vs/static/js/main.b805cb33.js",
     "static/js/787.5c70ddb9.chunk.js": "/vs/static/js/787.5c70ddb9.chunk.js",
     "static/media/tartarussimlogo.png": "/vs/static/media/tartarussimlogo.bcf30e0a67fe11a12b36.png",
     "static/media/pic.webp": "/vs/static/media/pic.a11d180ce950d9a61d8f.webp",
     "static/media/shelves.png": "/vs/static/media/shelves.9e3362682b69f44594f8.png",
     "static/media/logo512noborder.png": "/vs/static/media/logo512noborder.b9f059117f2e0ca3f92c.png",
+    "static/media/art.jpg": "/vs/static/media/art.3cfc84f65b0b997cac0c.jpg",
+    "static/media/io.png": "/vs/static/media/io.e7cde0e5dc9e3c732d2e.png",
     "static/media/rockstars.png": "/vs/static/media/rockstars.6247bd257e9686fd3b56.png",
-    "static/media/art.png": "/vs/static/media/art.5e40aa635f52c53bc4b8.png",
-    "static/media/ioscold.png": "/vs/static/media/ioscold.3c79deaf2f572f6da992.png",
     "static/media/Roboto-Thin.ttf": "/vs/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
     "static/media/Roboto-Regular.ttf": "/vs/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Roboto-Light.ttf": "/vs/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
     "static/media/broadway.png": "/vs/static/media/broadway.5eb6c1c546082bdc3dda.png",
     "index.html": "/vs/index.html",
     "main.d74f7e62.css.map": "/vs/static/css/main.d74f7e62.css.map",
-    "main.6e00566a.js.map": "/vs/static/js/main.6e00566a.js.map",
+    "main.b805cb33.js.map": "/vs/static/js/main.b805cb33.js.map",
     "787.5c70ddb9.chunk.js.map": "/vs/static/js/787.5c70ddb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d74f7e62.css",
-    "static/js/main.6e00566a.js"
+    "static/js/main.b805cb33.js"
   ]
 }
