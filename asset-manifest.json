@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vs/static/css/main.d74f7e62.css",
-    "main.js": "/vs/static/js/main.b805cb33.js",
+    "main.js": "/vs/static/js/main.13c0041c.js",
     "static/js/787.5c70ddb9.chunk.js": "/vs/static/js/787.5c70ddb9.chunk.js",
     "static/media/tartarussimlogo.png": "/vs/static/media/tartarussimlogo.bcf30e0a67fe11a12b36.png",
     "static/media/pic.webp": "/vs/static/media/pic.a11d180ce950d9a61d8f.webp",
@@ -16,11 +16,11 @@
     "static/media/broadway.png": "/vs/static/media/broadway.5eb6c1c546082bdc3dda.png",
     "index.html": "/vs/index.html",
     "main.d74f7e62.css.map": "/vs/static/css/main.d74f7e62.css.map",
-    "main.b805cb33.js.map": "/vs/static/js/main.b805cb33.js.map",
+    "main.13c0041c.js.map": "/vs/static/js/main.13c0041c.js.map",
     "787.5c70ddb9.chunk.js.map": "/vs/static/js/787.5c70ddb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d74f7e62.css",
-    "static/js/main.b805cb33.js"
+    "static/js/main.13c0041c.js"
   ]
 }
